@@ -857,7 +857,7 @@ input[type="button"].btn--primary:focus {
 .btn--stroke, button.btn--stroke {
     background: transparent !important;
     border: 0.1rem solid #ffffff;
-    color: #000000;
+    color: #ffffff;
 }
 
 .btn--stroke:hover, button.btn--stroke:hover {
@@ -1498,8 +1498,8 @@ custom-under {
 .s-header.sticky {
     position: fixed;
     top: 0;
-    background-color: #000000 !important;
-    opacity: 0;
+    background-color: #e6e6e6 !important;
+    opacity: .8;
     visibility: hidden;
     z-index: 600;
 }
@@ -1513,8 +1513,9 @@ custom-under {
 }
 
 .s-header.sticky.scrolling {
-    opacity: 0.8;
+    opacity: .9;
     visibility: visible;
+	
 }
 
 
@@ -1670,12 +1671,12 @@ custom-under {
 .header-nav li a {
     display: block;
     line-height: 72px;
-    color: #FFFFFF;
+    color: #464646;
 }
 
 .header-nav li.current a {
     font-family: "montserrat-extrabold", sans-serif;
-    color: #af2b2b;
+    color: #862121;
 }
 
 
@@ -1752,10 +1753,10 @@ custom-under {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .8;
-    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
-    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
-    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+    opacity: 0;
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.9) 100%);
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.9) 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000', GradientType=0);
 }
 
@@ -1765,7 +1766,7 @@ custom-under {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .5;
+    opacity: 0.1;
     background-color: #111111;
 }
 
@@ -1792,9 +1793,9 @@ custom-under {
 .home-content h3 {
     font-family: courier new;
     font-size: 1.8rem;
-    color: #862121;
+    color: #862121s;
     text-transform: uppercase;
-    letter-spacing: .5rem;
+    letter-spacing: .6rem;
     position: relative;
     padding-left: 80px;
     margin-left: -30px;
@@ -1839,7 +1840,7 @@ custom-under {
     display: inline-block;
     width: 180px;
     border-color: #1f1513;
-    color: #FFFFFF;
+    color: #000000;
 	background: #FFFFFF;
     margin: 2rem 0 0 0rem;
     letter-spacing: .25rem;
@@ -1865,7 +1866,7 @@ custom-under {
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    color: #FFFFFF;
+    color: #000000;
     position: relative;
     display: inline-block;
     line-height: 3rem;
@@ -4196,7 +4197,7 @@ article.blog-single .blog-content {
   width: 100%;
   opacity: 0.6;
   background-color: transparent;
-  border: solid 1px #7d7575;
+  border: solid 1px #862121;
   color: #ffffff;
 }
 
