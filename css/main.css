@@ -611,13 +611,14 @@ input[type="url"],
 input[type="password"], 
 textarea, select {
     display: block;
-    height: 6rem;
-    padding: 1.5rem 0;
+    height: rem;
+    padding: 1.5rem 1;
+	margin-top:1rem;
     border: 0;
     outline: none;
-    color: #333333;
-    font-family: "montserrat-regular", sans-serif;
-    font-size: 1.5rem;
+    color: black;
+    font-family: "courier new", sans-serif;
+    font-size: 1.3rem;
     line-height: 3rem;
     max-width: 100%;
     background: transparent;
@@ -683,7 +684,8 @@ textarea, select {
 }
 
 textarea {
-    min-height: 25rem;
+    min-height: 10rem;
+	
 }
 
 input[type="email"]:focus, 
@@ -694,8 +696,10 @@ input[type="tel"]:focus,
 input[type="url"]:focus, 
 input[type="password"]:focus, 
 textarea:focus, select:focus {
-    color: #000000;
+    color: black;
     border-bottom: 2px solid black;
+	font-weight:700;
+	line-height: 1.7;
 }
 
 label, legend {
@@ -2267,16 +2271,16 @@ html.no-csstransitions .home-content__main {
 .timeline__block {
     position: relative;
     padding-left: 8rem;
-    min-height: 15.8rem;
+    min-height: 13.8rem;
 }
 
 .timeline__bullet {
-    background: #0D0A0B;
+    background: gray;
     height: 1.5rem;
     width: 1.5rem;
-    border-radius: 50%;
+    
     margin-left: -0.75rem;
-    box-shadow: 0 0 0 9px #E9E9E9;
+    box-shadow: 0 0 0 3px #E9E9E9;
     position: absolute;
     left: 2rem;
     top: .3rem;
@@ -2289,7 +2293,7 @@ html.no-csstransitions .home-content__main {
     letter-spacing: .15rem;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: .9rem;
-    font-family: "montserrat-bold", sans-serif;
+    font-family: "courier new", sans-serif;
 }
 
 .timeline__header h3 {
@@ -2299,7 +2303,8 @@ html.no-csstransitions .home-content__main {
 
 .timeline__header h5 {
     margin-top: 0;
-	margin-bottom:1px
+	margin-bottom:1px;
+	
 }
 
 .timeline__desc p {
@@ -3080,8 +3085,8 @@ html.no-csstransitions .home-content__main {
     border-top: solid .4rem gray;
     background-repeat: no-repeat;
     background-position: center, center;
-    padding-top: 10.2rem;
-    padding-bottom: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 0rem;
     color: black;
     position: relative;
 }
@@ -3111,6 +3116,7 @@ html.no-csstransitions .home-content__main {
 
 .s-contact .form-field {
     position: relative;
+	
 }
 
 .s-contact .form-field:after {
@@ -3121,10 +3127,10 @@ html.no-csstransitions .home-content__main {
 
 .s-contact .form-field label {
     font-family: "montserrat-semibold", sans-serif;
-    font-size: 0.2rem;
+    font-size: 0.9rem;
     line-height: 2rem;
     position: absolute;
-    bottom: -0.3rem;
+    bottom: -0.5rem;
     right: .6rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -3137,9 +3143,9 @@ html.no-csstransitions .home-content__main {
 .s-contact .form-field label::after {
     content: "";
     position: absolute;
-    left: -5px;
+    left: -6px;
     top: 50%;
-    margin-top: -6px;
+    margin-top: -5px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     border-right: 5px solid #450f0f;
@@ -3160,6 +3166,7 @@ html.no-csstransitions .home-content__main {
 
 .contact__form {
     padding-right: 40px;
+	
 }
 
 .contact__form input[type="email"], 
@@ -3170,8 +3177,8 @@ html.no-csstransitions .home-content__main {
 .contact__form textarea {
     background-color: transparent;
     border-bottom: 1px solid gray;
-    margin-bottom: -.9rem;
-    color: #450f0f;
+    margin-bottom: -0.9rem;
+    color: black;
 }
 
 .contact__form input[type="email"]:focus, 
@@ -3182,6 +3189,7 @@ html.no-csstransitions .home-content__main {
 .contact__form textarea:focus {
     color: black;
     border-bottom: 1px solid black;
+
 }
 
 .contact__form button {
@@ -3327,8 +3335,9 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 400px) {
     .contact__form {
-        padding-right: 0;
+        padding-right: 0;`
     }
+
 }
 
 
@@ -3339,11 +3348,12 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 
 footer {
-    font-family: "montserrat-regular", sans-serif;
-    font-size: 14px;
-    padding: 6.6rem 0 4.2rem;
+    font-family: "courier new", sans-serif;
+    font-size: 12px;
+    padding: 2.6rem 0 2.2rem;
     text-align: center;
-    color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+	background: gray;
 }
 
 footer a, footer a:visited {
@@ -3360,14 +3370,14 @@ footer a:hover, footer a:focus {
 
 .footer-site-logo {
     display: block;
-    width: 130px;
+    width: 100px;
 }
 
 .footer-social {
     list-style: none;
-    margin-top: 3rem;
+    margin-top: 0rem;
     margin-left: 0;
-    font-family: "montserrat-regular", sans-serif;
+    font-family: "courier new", sans-serif;
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
@@ -3394,8 +3404,8 @@ footer a:hover, footer a:focus {
 }
 
 .footer-social li i {
-    font-size: 1.7rem;
-    line-height: 3rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
     vertical-align: middle;
 }
 
@@ -3416,7 +3426,7 @@ footer a:hover, footer a:focus {
 }
 
 .footer-bottom {
-    margin-top: 7.2rem;
+    margin-top: 0rem;
     text-align: center;
 }
 
