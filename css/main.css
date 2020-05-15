@@ -544,7 +544,7 @@ form,
     left: 0;
     right: 0;
     bottom: 0;
-    background: #0F1215;
+    background: white;
     z-index: 800;
     height: 100%;
     width: 100%;
@@ -859,6 +859,7 @@ input[type="button"].btn--primary:focus {
     line-height: calc(6rem - .6rem) !important;
 }
 
+
 .btn--stroke, button.btn--stroke {
     background: transparent !important;
     border: 0.1rem solid #ffffff;
@@ -869,6 +870,8 @@ input[type="button"].btn--primary:focus {
     border: 0.3rem solid #450f0f;
     color: #450f0f;
 }
+
+
 
 .btn--pill, button.btn--pill {
     padding-left: 3rem !important;
@@ -1316,6 +1319,19 @@ custom-under {
     text-align: center;
 }
 
+custom-under_1 {
+	padding-bottom: 1 rem;
+    position: relative;
+	display: inline-block;
+    height: 2px;
+    width: 100%;
+	margin-bottom:50px;
+	margin-top: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -1544,7 +1560,7 @@ custom-under {
 
 .header-logo a {
     display: block;
-    margin: 9px 0 0 0;
+    margin: 9px 0 0 0;#
     padding: 0;
     outline: 0;
     border: none;
@@ -1677,7 +1693,7 @@ custom-under {
 .header-nav li a {
     display: block;
     line-height: 72px;
-    color: #464646;
+    color: black;
 }
 
 .header-nav li.current a {
@@ -1702,7 +1718,7 @@ custom-under {
         right: auto;
         top: 0;
         left: 0;
-        background-color: #000000;
+        background-color: gray;
         padding: 120px 40px 21px;
     }
     .header-nav-wrap .header-nav {
@@ -1831,6 +1847,7 @@ custom-under {
 .home-content__main {
     padding-right: 100px;
     position: relative;
+	margin-top:100px;
 }
 
 .home-content__buttons {
@@ -1844,11 +1861,11 @@ custom-under {
 
 .home-content__buttons .btn {
     display: inline-block;
-    width: 180px;
+    width: 200px;
     border-color: #1f1513;
     color: #000000;
 	background: #FFFFFF;
-    margin: 2rem 0 0 0rem;
+    margin: 2rem 6rem 0 0rem;
     letter-spacing: .25rem;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -1860,6 +1877,24 @@ custom-under {
     color: #000000;
 	border-color: #000000;
 }
+
+.home-content__buttons .cus_btn {
+	
+	width: 250px; 
+	border:solid gray .25em; 
+	border-bottom:none; 
+	border-top:inset;
+	font-size: 16px; 
+	font-family:arial; 
+	margin-top:6rem; 
+	color: #450f0f;
+	margin-left: 0rem;
+	margin-right: 0rem;
+	background-color: gray;
+	
+}
+
+
 
 .home-content__scroll {
     position: absolute;
@@ -2690,7 +2725,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .testimonials {
-    margin-top: 1rem;
+    margin-top: 6rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
 }
@@ -2790,7 +2825,7 @@ html.no-csstransitions .home-content__main {
 
 .testimonials__slide {
     position: relative;
-    padding-top: 4.5rem;
+    padding-top: 5rem;
     padding-left: 9rem;
     padding-right: 1rem;
     line-height: 1.463;
