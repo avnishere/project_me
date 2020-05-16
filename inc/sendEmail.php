@@ -1,64 +1,64 @@
 ﻿<?php
 
-// Replace this with your own email address
-$siteOwnersEmail = 'contact@avnishere.com';
+
 
 
 if($_POST) {
 
-    $name = trim(stripslashes($_POST['contactName']));
-    $email = trim(stripslashes($_POST['contactEmail']));
-    $subject = trim(stripslashes($_POST['contactSubject']));
-    $contact_message = trim(stripslashes($_POST['contactMessage']));
+    $contactName = trim(stripslashes($_POST['contactName']));
+    $contactEmail = trim(stripslashes($_POST['contactEmail']));
+    $contactSubject = trim(stripslashes($_POST['contactSubject']));
+    $contactMessage = trim(stripslashes($_POST['contactMessage']));
 
     // Check Name
-    if (strlen($name) < 2) {
-        $error['name'] = "Please enter your name.";
+    if (strlen($contactName) < 2) {
+        $error['contactName'] = "Please enter your name.";
     }
     // Check Email
-    if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $email)) {
-        $error['email'] = "Please enter a valid email address.";
+    if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $contactEmail)) {
+        $error['contactEmail'] = "Please enter a valid email address.";
     }
     // Check Message
-    if (strlen($contact_message) < 15) {
-        $error['message'] = "Please enter your message. It should have at least 15 characters.";
+    if (strlen($contactMessage) < 10) {
+        $error['contactMessage'] = "Please enter your message. It should have at least 15 characters.";
     }
     // Subject
-    if ($subject == '') { $subject = "Contact Form Submission"; }
-
-
-    // Set Message
-    $message .= "Email from: " . $name . "<br />";
-    $message .= "Email address: " . $email . "<br />";
-    $message .= "Message: <br />";
-    $message .= $contact_message;
-    $message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
-
-    // Set From: header
-    $from =  $name . " <" . $email . ">";
-
-    // Email Headers
-    $headers = "From: " . $from . "\r\n";
-    $headers .= "Reply-To: ". $email . "\r\n";
-    $headers .= "MIME-Version: 1.0\r\n";
-    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+    if ($contactSubject == '') { $contactSubject = "Contact Form Submission"; }
 
 
     if (!$error) {
+		
+		$link = mysqli_connect("localhost", "avnkum6_db", "iammicky", "avnkum6_db");
 
-        ini_set("sendmail_from", $siteOwnersEmail); // for windows server
-        $mail = mail($siteOwnersEmail, $subject, $message, $headers);
-
-        if ($mail) { echo "OK"; }
-        else { echo "Something went wrong. Please try again."; }
+		if($link === false){
+			die("ERROR: Could not connect. " . mysqli_connect_error());
+		}
+		
+		$contactName = mysqli_real_escape_string($link, $_REQUEST['contactName']);
+		$contactEmail = mysqli_real_escape_string($link, $_REQUEST['contactEmail']);
+		$contactSubject = mysqli_real_escape_string($link, $_REQUEST['contactSubject']);
+		$contactMessage = mysqli_real_escape_string($link, $_REQUEST['contactMessage']);
+		
+		
+		
+		$sql = "INSERT INTO contact (contactName, contactEmail, contactSubject, contactMessage) VALUES ('$contactName', '$contactEmail', '$contactSubject', '$contactMessage')";
+		if(mysqli_query($link, $sql)){
+			echo "Thank you for the message! We shall soon be in touch.";
+		} else{
+			echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+		}
+ 
+		// Close connection
+		mysqli_close($link);
+		
         
     } # end if - no validation error
 
     else {
 
-        $response = (isset($error['name'])) ? $error['name'] . "<br /> \n" : null;
-        $response .= (isset($error['email'])) ? $error['email'] . "<br /> \n" : null;
-        $response .= (isset($error['message'])) ? $error['message'] . "<br />" : null;
+        $response = (isset($error['contactName'])) ? $error['contactName'] . "<br /> \n" : null;
+        $response .= (isset($error['contactEmail'])) ? $error['contactEmail'] . "<br /> \n" : null;
+        $response .= (isset($error['contactMessage'])) ? $error['contactMessage'] . "<br />" : null;
         
         echo $response;
 

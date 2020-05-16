@@ -707,7 +707,7 @@
 
         <div class="row contact__main">
             <div class="col-five tab-full contact__form">
-                <form name="contactForm" id="contactForm" method="post" action="">
+                <form name="contactForm" id="contactForm" method="post" action="sendEmail.php">
                     <fieldset>
     
                     <div class="form-field">
@@ -723,7 +723,7 @@
                         <textarea name="contactMessage" id="contactMessage" placeholder="Message" rows="2" cols="50" required="" aria-required="true" class="full-width"></textarea>
                     </div>
                     <div class="form-field">
-                      	<button class="half-width  btn--stroke" style="color:black">Submit</button>
+                      	<button class="half-width  btn--stroke" style="color:black" value = "POST" type= "POST" >Submit</button>
                         <div class="submit-loader">
                             <div class="text-loader">Sending...</div>
                             <div class="s-loader">

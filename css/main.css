@@ -3586,7 +3586,7 @@ article.blog-single .blog-content {
     padding-bottom: 7.2rem;
     position: relative;
     color: rgba(255, 255, 255, 0.5);
-    min-height: 50.4rem;
+    min-height: 61rem;
 }
 
 .page-header--single {
@@ -3603,7 +3603,7 @@ article.blog-single .blog-content {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .75;
+    opacity: .2;
     background-color: #0D0A0B;
 }
 
@@ -3628,7 +3628,7 @@ article.blog-single .blog-content {
 
 .page-header__content {
     font-family: "montserrat-regular", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1.8;
     position: relative;
     max-width: 900px;
