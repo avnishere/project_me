@@ -34,16 +34,16 @@ if($_POST) {
 			die("ERROR: Could not connect. " . mysqli_connect_error());
 		}
 		
-		$contactName = mysqli_real_escape_string($link, $_REQUEST['contactName']);
-		$contactEmail = mysqli_real_escape_string($link, $_REQUEST['contactEmail']);
-		$contactSubject = mysqli_real_escape_string($link, $_REQUEST['contactSubject']);
-		$contactMessage = mysqli_real_escape_string($link, $_REQUEST['contactMessage']);
+		//$contactName = mysqli_real_escape_string($link, $_REQUEST['contactName']);
+		//$contactEmail = mysqli_real_escape_string($link, $_REQUEST['contactEmail']);
+		//$contactSubject = mysqli_real_escape_string($link, $_REQUEST['contactSubject']);
+		//$contactMessage = mysqli_real_escape_string($link, $_REQUEST['contactMessage']);
 		
 		
 		
 		$sql = "INSERT INTO contact (contactName, contactEmail, contactSubject, contactMessage) VALUES ('$contactName', '$contactEmail', '$contactSubject', '$contactMessage')";
 		if(mysqli_query($link, $sql)){
-			echo "Thank you for the message! We shall soon be in touch.";
+			echo "Thank you for the message! We shall soon be in touch." ;
 		} else{
 			echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 		}

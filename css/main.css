@@ -3271,9 +3271,9 @@ html.no-csstransitions .home-content__main {
 
 .submit-loader .text-loader {
     display: none;
-    font-family: "montserrat-bold", sans-serif;
+    font-family: "courier new", sans-serif;
     font-size: 1.4rem;
-    color: #FFFFFF;
+    color: #450f0f;
     letter-spacing: .2rem;
     text-transform: uppercase;
 }
@@ -3303,7 +3303,7 @@ html.no-csstransitions .home-content__main {
 .s-loader > div {
     width: 9px;
     height: 9px;
-    background-color: #FFFFFF;
+    background-color: #450f0f;
     border-radius: 100%;
     display: inline-block;
     margin-right: .9rem;
@@ -3628,7 +3628,7 @@ article.blog-single .blog-content {
 
 .page-header__content {
     font-family: "montserrat-regular", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.5jrem;
     line-height: 1.8;
     position: relative;
     max-width: 900px;
