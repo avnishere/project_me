@@ -1523,7 +1523,7 @@ custom-under_1 {
     opacity: .8;
     visibility: hidden;
     z-index: 600;
-	border-bottom: solid .1rem #450f0f;
+	border-bottom: solid .2rem black;
 }
 
 .s-header.sticky .header-logo a {
@@ -1942,19 +1942,20 @@ custom-under_1 {
  * ------------------------------------------------------------------- */
 
 .home-social {
-    font-family: "montserrat-bold", sans-serif;
+    font-family: "courier new", sans-serif;
     list-style: none;
     margin: 0;
     padding-bottom: 26rem;
     position: absolute;
     bottom: 0;
     right: 40px;
+	font-weight: 700;
 }
 
 .home-social::after {
     display: block;
     content: "";
-    height: 17.4rem;
+    height: 0rem;
     width: 1px;
     background-color: #450f0f;
     position: absolute;
@@ -1970,13 +1971,13 @@ custom-under_1 {
 
 .home-social li {
     position: relative;
-    height: 3.6rem;
+    height: 4rem;
 }
 
 .home-social i, .home-social span {
     position: absolute;
     top: 0;
-    line-height: 3.6rem;
+    line-height: 5.6rem;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
@@ -3235,20 +3236,22 @@ html.no-csstransitions .home-content__main {
 
 .message-warning, .message-success {
     display: none;
-    background: #0D0A0B;
-    font-size: 1.5rem;
+    background: transparent;
+    font-size: 1.4rem;
     line-height: 2;
-    padding: 3rem;
-    margin-bottom: 3.6rem;
+    padding: 0rem;
+    margin-bottom: 1.6rem;
     width: 100%;
+	font-family:courier new;
+	font-weight: bold;
 }
 
 .message-warning {
-    color: #ff6163;
+    color: red;
 }
 
 .message-success {
-    color: #008C2C;
+    color: green;
 }
 
 .message-warning i, .message-success i {
@@ -3267,15 +3270,16 @@ html.no-csstransitions .home-content__main {
     width: 100%;
     text-align: center;
     margin-bottom: 4.2rem;
+	background:transparent;
 }
 
 .submit-loader .text-loader {
-    display: none;
+    display: block;
     font-family: "courier new", sans-serif;
     font-size: 1.4rem;
     color: #450f0f;
     letter-spacing: .2rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .oldie .submit-loader .s-loader {

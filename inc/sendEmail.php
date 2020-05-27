@@ -43,7 +43,7 @@ if($_POST) {
 		
 		$sql = "INSERT INTO contact (contactName, contactEmail, contactSubject, contactMessage) VALUES ('$contactName', '$contactEmail', '$contactSubject', '$contactMessage')";
 		if(mysqli_query($link, $sql)){
-			echo "Thank you for the message! We shall soon be in touch." ;
+			echo "Your message was sent, thank you!";
 		} else{
 			echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 		}
