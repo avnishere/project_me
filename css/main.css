@@ -1793,7 +1793,7 @@ custom-under_1 {
 }
 
 .no-js .s-home {
-    background: #0D0A0B;
+    background: white;
 }
 
 
@@ -3274,7 +3274,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .submit-loader .text-loader {
-    display: block;
+    display: none;
     font-family: "courier new", sans-serif;
     font-size: 1.4rem;
     color: #450f0f;
