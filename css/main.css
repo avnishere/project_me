@@ -3162,7 +3162,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .s-contact .form-field label {
-    font-family: "montserrat-semibold", sans-serif;
+    font-family: "courier new", sans-serif;
     font-size: 0.9rem;
     line-height: 2rem;
     position: absolute;
@@ -3211,9 +3211,10 @@ html.no-csstransitions .home-content__main {
 .contact__form input[type="tel"], 
 .contact__form input[type="url"], 
 .contact__form textarea {
-    background-color: transparent;
-    border-bottom: 1px solid gray;
-    margin-bottom: -0.9rem;
+    background-color: white;
+    border-left: 1px solid #450f0f;
+	border-right: 1px solid #450f0f;
+    margin-bottom: -0.2rem;
     color: black;
 }
 
