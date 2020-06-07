@@ -1500,6 +1500,7 @@ custom-under_1 {
     position: absolute;
     top: 0;
     z-index: 500;
+	
 }
 
 .s-header.offset {
@@ -1523,7 +1524,8 @@ custom-under_1 {
     opacity: .8;
     visibility: hidden;
     z-index: 600;
-	border-bottom: solid .2rem black;
+	
+	box-shadow: 0 0 10px rgba(0,0,0,0.3) inset;
 }
 
 .s-header.sticky .header-logo a {
@@ -1767,7 +1769,9 @@ custom-under_1 {
     background-color: transparent;
     position: relative;
     display: table;
+	box-shadow: 5px 0px 5px -1px rgba(0,0,0,0.1) inset, -5px 0px 5px -1px rgba(0,0,0,0.1) inset;
 }
+
 
 .s-home .shadow-overlay {
     position: absolute;
@@ -2265,7 +2269,8 @@ html.no-csstransitions .home-content__main {
     padding-bottom: 5rem;
     background-color: #FFFFFF;
     position: relative;
-	
+	box-shadow: 0 0 10px rgba(0,0,0,0.3) inset;
+	box-shadow: 5px 0px 5px -1px rgba(0,0,0,0.1) inset, -5px 0px 5px -1px rgba(0,0,0,0.1) inset;
 }
 
 .about-content {
@@ -2427,6 +2432,7 @@ html.no-csstransitions .home-content__main {
     padding-bottom: 15.6rem;
     background-color: #f1f1f1;
     position: relative;
+	box-shadow: 5px 0px 5px -1px rgba(0,0,0,0.1) inset, -5px 0px 5px -1px rgba(0,0,0,0.1) inset;
 }
 
 
@@ -2940,6 +2946,7 @@ html.no-csstransitions .home-content__main {
     padding-bottom: 9.6rem;
     background-color: #FFFFFF;
     position: relative;
+	box-shadow: 5px 0px 5px -1px rgba(0,0,0,0.1) inset, -5px 0px 5px -1px rgba(0,0,0,0.1) inset;
 }
 
 
@@ -3118,13 +3125,14 @@ html.no-csstransitions .home-content__main {
 
 .s-contact {
     background-color: #faf7f7;
-    border-top: solid .4rem gray;
+    
     background-repeat: no-repeat;
     background-position: center, center;
     padding-top: 10rem;
     padding-bottom: 0rem;
     color: black;
     position: relative;
+	box-shadow: 5px 0px 5px -1px rgba(0,0,0,0.1) inset,, -5px 0px 5px -1px rgba(0,0,0,0.1) inset;
 }
 
 .s-contact .overlay {
